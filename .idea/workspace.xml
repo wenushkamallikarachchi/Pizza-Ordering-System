@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cc51e36f-9e76-43c8-9161-ddb828863994" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jJOHbMxxnhmq4t7cg6MGVPff4G" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/New_Shopping_Cart" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\w1673746\application\views" />
+      <recent name="C:\xampp\htdocs\w1673746\application\views\checkout" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc51e36f-9e76-43c8-9161-ddb828863994" name="Default Changelist" comment="" />
+      <created>1603518644133</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603518644133</updated>
+      <workItem from="1603518646705" duration="53143000" />
+      <workItem from="1603615223788" duration="12599000" />
+      <workItem from="1603908598527" duration="3132000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="443" y="171" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603532611446">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="443" y="171" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738/1366.0.1024.738@0.0.1366.738" timestamp="1603532611446" />
+    <state x="265" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603910031914">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="265" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738/1366.0.1024.738@0.0.1366.738" timestamp="1603910031914" />
+    <state x="1587" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738/1366.0.1024.738@1366.0.1024.738" timestamp="1603548494729" />
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1603911101436">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738/1366.0.1024.738@0.0.1366.738" timestamp="1603911101436" />
+    <state x="450" y="92" key="NewPhpClassDialog" timestamp="1603909952557">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="450" y="92" key="NewPhpClassDialog/0.0.1366.738/1366.0.1024.738@0.0.1366.738" timestamp="1603909952557" />
+    <state x="517" y="292" key="NewPhpFileDialog" timestamp="1603559641802">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="517" y="292" key="NewPhpFileDialog/0.0.1366.738/1366.0.1024.738@0.0.1366.738" timestamp="1603559641802" />
+  </component>
+</project>
