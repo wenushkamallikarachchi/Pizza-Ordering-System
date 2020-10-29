@@ -61,6 +61,7 @@ class CartModel extends CI_Model
                 // prep the price
                 $item['price'] = (float)$item['price'];
                 // create a unique identifier for the item being inserted into the cart
+                //md5=calculates the MD5 hash of a string
                 $rowid = md5($item['id']);
                 // get quantity if it's already there and add it on
                 $old_qty = isset($this->cart_contents[$rowid]['qty']) ? (int)$this->cart_contents[$rowid]['qty'] : 0;

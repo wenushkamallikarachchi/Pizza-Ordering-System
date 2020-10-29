@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>Order Status - CodeIgniter Shopping Cart by CodexWorld</title>
+    <title>Orders</title>
     <meta charset="utf-8">
-
-    <!-- Include bootstrap library -->
     <link href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>" rel="stylesheet">
-
-    <!-- Include custom css -->
     <link href="<?php echo base_url('assets/css/style.css'); ?>" rel="stylesheet">
 
 </head>
 <body>
 <div class="container">
-    <h1>ORDER STATUS</h1>
+    <h1>Order State</h1>
     <div class="col-12">
         <?php
         if (!empty($order)) { ?>
@@ -24,8 +20,7 @@
             <div class="row col-lg-12 ord-addr-info">
                 <div class="hdr">Order Info</div>
                 <p><b>Reference ID:</b> #<?php echo $order['id']; ?></p>
-                <p><b>Total:</b> <?php echo 'Rs' . $order['grand_total']; ?></p>
-                <p><b>Placed On:</b> <?php echo $order['created']; ?></p>
+                <p><b>Total:</b> <?php echo 'Rs'." " .$order['grand_total']; ?></p>
                 <p><b>Buyer Name:</b> <?php echo $order['name']; ?></p>
                 <p><b>Email:</b> <?php echo $order['email']; ?></p>
                 <p><b>Phone:</b> <?php echo $order['phone']; ?></p>
