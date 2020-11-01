@@ -1,5 +1,4 @@
 <?php
-include 'Cart.php';
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Cartclass extends CI_Controller
@@ -7,9 +6,8 @@ class Cartclass extends CI_Controller
     function __construct()
     {
         parent::__construct();
-        //$this->load->driver('CartModel');
+
         // Load cart class and pizza model
-        $this->load->library('cart');
         $this->load->model('PizzaModel');
         $this->load->model('CartModel');
     }
@@ -18,7 +16,8 @@ class Cartclass extends CI_Controller
     {
         $data = array();
         $data['cartItems'] = $this->CartModel->contents();
-        $this->load->view('cart/cart', $data);
+        $data['cartmodel'] = $this->CartModel;
+        $this->load->view('cart', $data);
     }
 
     public  function updatePizzaQty()
@@ -43,7 +42,7 @@ class Cartclass extends CI_Controller
     public function deleteItem($rowid){
         // delete the selected  item from cart
         $delete = $this->CartModel->remove($rowid);
-        redirect('Homepage/cart');
+        redirect('Cartclass/');
     }
 
 }

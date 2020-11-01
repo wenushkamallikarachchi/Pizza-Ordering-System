@@ -31,7 +31,7 @@
                     <ul class="list-group mb-3">
                         <?php
                         if ($this->cart->total_items() > 0) {
-                            foreach ($this->cart->contents() as $item) { ?>
+                            foreach ($cartItems as $item) { ?>
                                 <li class="list-group-item d-flex justify-content-between lh-condensed">
                                     <div>
                                         <?php $imageURL = !empty($item["image"]) ? base_url('uploads/product_images/' . $item["image"]) : base_url('assets/images/pro-demo-img.jpeg'); ?>
@@ -59,7 +59,7 @@
                 </div>
                 <div class="col-md-8 order-md-1">
                     <h4 class="mb-3">Contact Details</h4>
-                    <?php echo form_open('CheckoutClass'); ?>
+                    <?php echo form_open('CheckoutClass/'); ?>
                     <div class="mb-3">
                         <label for="name">Name</label>
                         <input type="text" class="form-control" name="name"

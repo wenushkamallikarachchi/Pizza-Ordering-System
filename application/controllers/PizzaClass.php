@@ -35,9 +35,10 @@ class PizzaClass extends CI_Controller
 
         //add to cart class to data(array)
         $this->CartModel->insert($data);
+
         //print_r($data);
         // Redirect to the cart page
-        redirect('Homepage/cart');
+        redirect('Cartclass/');
 
 
     }

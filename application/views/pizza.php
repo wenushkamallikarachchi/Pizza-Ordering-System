@@ -14,7 +14,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
     <h2>Pizza Menu</h2>
     <!-- Cart view -->
     <div class="cart-view">
-        <a href="<?php echo site_url('Homepage/cart'); ?>" title="View Cart"><i class="icart"></i>
+        <a href="<?php echo site_url('Cartclass/'); ?>" title="View Cart"><i class="icart"></i>
             (<?php echo ($this->cart->total_items() > 0) ? $this->cart->total_items() . ' Items' : 'Empty'; ?>)</a>
     </div>
 
@@ -75,56 +75,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <p>Product(s) not found...</p>
         <?php } ?>
     </div>
-    <!---->
-    <!--    <h4 style="margin-right: 50%">Customize your size</h4>-->
-    <!--    <div class="col-md-8 order-md-1">-->
-    <!---->
-    <!--        --><?php //echo form_open('Custompizza/'); ?>
-    <!---->
-    <!--        <div class="card row-lg-3">-->
-    <!--            <div class="card-body">-->
-    <!--                <h4>Select your pizza size</h4>-->
-    <!--                <div class="custom-radio">-->
-    <!--                    <label class="radio-inline"><input type="radio" value="personal" name="size">Personal</label>-->
-    <!--                    --><?php //echo form_error('size', '<p class="help-block error">', '</p>'); ?>
-    <!--                </div>-->
-    <!--                <div class="custom-radio">-->
-    <!--                    <label class="radio-inline"><input type="radio" value="medium" name="size">Meduim</label>-->
-    <!--                </div>-->
-    <!--                <div class="custom-radio">-->
-    <!--                    <label class="radio-inline"><input type="radio" value="large" name="size">Large</label>-->
-    <!--                </div>-->
-    <!--                <br>-->
-    <!--                <h4>Select your pizza crust</h4>-->
-    <!--                <div class="checkbox">-->
-    <!--                    <label class="radio-inline"><input type="radio" value="Plain Crust" name="crust">Plain Crust</label>-->
-    <!--                </div>-->
-    <!--                <div class="checkbox">-->
-    <!--                    <label class="radio-inline"><input type="radio" value="Spicy Crust" name="crust">Spicy Crust</label>-->
-    <!--                </div>-->
-    <!--                <div class="checkbox disabled">-->
-    <!--                    <label class="radio-inline"><input type="radio" value="Special Crust" name="crust">House Special-->
-    <!--                        Crust</label>-->
-    <!--                </div>-->
-    <!---->
-    <!--                <h4>Select your pizza meat</h4>-->
-    <!--                <div class="checkbox">-->
-    <!--                    <label class="radio-inline"><input type="radio" value="Pepperoni" name="meat">Pepperoni</label>-->
-    <!--                </div>-->
-    <!--                <div class="checkbox">-->
-    <!--                    <label class="radio-inline"><input type="radio" value="Chicken" name="meat">Chicken</label>-->
-    <!--                </div>-->
-    <!--                <div class="checkbox disabled">-->
-    <!--                    <label class="radio-inline"><input type="radio" value="Pork" name="meat">Pork</label>-->
-    <!--                </div>-->
-    <!--                <input class="btn btn-success btn-md " type="submit" name="addtocart"-->
-    <!--                       value="Add to cart">-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!---->
-    <!--        --><?php //echo form_close(); ?>
-    <!--        </form>-->
-
 </div>
 </body>
 </html>

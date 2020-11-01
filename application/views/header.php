@@ -20,26 +20,17 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
-        <img type="image/png" src="<?php echo base_url('upload/product_images/logo.png'); ?>">
-        <a class="navbar-brand" href="#">Pizza Now</a>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="<?php echo base_url('index.php/PizzaClass')?>">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url('index.php/Appetizerclass')?>">Appetizer</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Startup</a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-collapsible">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="#section1">One</a></li>
+                <li><a href="#section2">Two</a></li>
+                <li><a href="#section3">Three</a></li>
+                <li><a href="#section4">Four</a></li>
             </ul>
         </div>
     </div>

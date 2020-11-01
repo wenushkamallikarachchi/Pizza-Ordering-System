@@ -12,13 +12,12 @@ class CheckoutClass extends CI_Controller
         $this->load->library('form_validation');
         $this->load->helper('form');
 
-        // Load cart library
-        $this->load->library('cart');
+
 
         // Load product model
         $this->load->model('PizzaModel');
         $this->load->model('CartModel');
-        $this->controller = 'checkoutClass';
+        $this->controller = 'CheckoutClass';
     }
 
     function index()
@@ -60,15 +59,13 @@ class CheckoutClass extends CI_Controller
                     if ($order) {
 
                         $this->session->set_userdata('pass_message', ' successfully Order placed .');
-                        redirect('checkoutClass/orderPass/' . $order);
+                        redirect('CheckoutClass/orderPass/' . $order);
+                    } else {
+                        $data['fail_message'] = 'Order submission failed, please try again.';
                     }
-// else {
-//                        $data['fail_message'] = 'Order submission failed, please try again.';
-//                    }
+                } else {
+                    $data['fail_message'] = 'Some problems occured, please try again.';
                 }
-//                else {
-//                    $data['fail_message'] = 'Some problems occured, please try again.';
-//                }
             }
         }
 
@@ -79,7 +76,7 @@ class CheckoutClass extends CI_Controller
         $data['cartItems'] = $this->CartModel->contents();
 
         // Pass products data to the view
-        $this->load->view($this->controller . '/index', $data);
+        $this->load->view('checkout', $data);
     }
 
 
@@ -105,9 +102,6 @@ class CheckoutClass extends CI_Controller
         );
 
         $order = $this->PizzaModel->insertOrder($orderData);
-//        print_r('checkout order' . $order);
-
-
         if ($order) {
 //            // Retrieve cart data from the session
             $cartItems = $this->CartModel->contents();
@@ -129,13 +123,13 @@ class CheckoutClass extends CI_Controller
 
                 if ($insertOrderItems) {
                     // Remove items from the cart
-                    $this->cart->destroy();
+                    $this->CartModel->destroy();
 
                     // Return order ID
                     return $order;
                 }
 
-    }
+            }
 
         }
         return false;
