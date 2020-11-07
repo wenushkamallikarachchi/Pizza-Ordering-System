@@ -1,10 +1,10 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-if (!session_id()) {
-
-    session_start();
-}
+//if (!session_id()) {
+//
+//    session_start();
+//}
 
 class CartModel extends CI_Model
 {
@@ -12,9 +12,9 @@ class CartModel extends CI_Model
 
     public function __construct()
     {
-$this->CI->session->userdata('cart_contents');
+
         // get the shopping cart array from the session
-        $this->cart_contents = !empty($_SESSION['cart_contents']) ? $_SESSION['cart_contents'] : NULL;
+        $this->cart_contents = $this->session->userdata('cart_contents');
         if ($this->cart_contents === NULL) {
             // set some base values
             $this->cart_contents = array('cart_total' => 0, 'total_items' => 0);
@@ -133,10 +133,10 @@ $this->CI->session->userdata('cart_contents');
 
         // if cart empty, delete it from the session
         if (count($this->cart_contents) <= 2) {
-            unset($_SESSION['cart_contents']);
+            $this->session->unset_userdata('cart_contents');
             return FALSE;
         } else {
-            $_SESSION['cart_contents'] = $this->cart_contents;
+            $this->session->set_userdata(array('cart_contents' => $this->cart_contents));
             return TRUE;
         }
     }
@@ -152,6 +152,6 @@ $this->CI->session->userdata('cart_contents');
     public function destroy()
     {
         $this->cart_contents = array('cart_total' => 0, 'total_items' => 0);
-        unset($_SESSION['cart_contents']);
+        $this->session->unset_userdata('cart_contents');
     }
 }
