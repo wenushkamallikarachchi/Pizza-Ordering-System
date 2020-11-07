@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>Cart</title>
+    <title>Cart - Pizza Now!!!</title>
     <meta charset="utf-8">
 
     <!-- Include bootstrap library -->
@@ -15,11 +15,14 @@
 
     <script>
         // Update item quantity
-        function updateCartItem(obj, rowid){
-            $.get("<?php echo site_url('/Cartclass/updatePizzaQty/'); ?>", {rowid:rowid, qty:obj.value}, function(resp){
-                if(resp == 'ok'){
+        function updateCartItem(obj, rowid) {
+            $.get("<?php echo site_url('/Cartclass/updatePizzaQty/'); ?>", {
+                rowid: rowid,
+                qty: obj.value
+            }, function (resp) {
+                if (resp == 'ok') {
                     location.reload();
-                }else{
+                } else {
                     alert('Cart update failed, please try again.');
                 }
             });
@@ -29,53 +32,63 @@
 <body>
 
 <div class="container">
-    <h1>SHOPPING CART</h1>
-    <div class="row">
+    <h1 style="text-align:center">Pizza CART</h1>
+    <div class="row justify-content-center col-md-12 ord-addr-info">
         <div class="cart">
             <div class="col-12">
                 <div class="table-responsive">
                     <table class="table table-striped">
-                        <thead>
                         <tr>
-
                             <th width="10%"></th>
                             <th width="30%">Pizza Name</th>
                             <th width="15%">Price</th>
                             <th width="13%">Quantity</th>
+                            <th width="12%"></th>
                             <th width="20%" class="text-right">Subtotal</th>
                             <th width="12%"></th>
                         </tr>
-                        </thead>
+
                         <tbody>
+
                         <?php
 
                         if ($cartmodel->total_items() > 0){
-                        foreach ($cartItems as $item){ ?>
+                        foreach ($cartItems
+
+                                 as $item){ ?>
                         <tr>
-                        <td>
-                            <?php $imageURL = !empty($item["image"]) ? base_url('uploads/product_images/' . $item["image"]) : base_url('assets/images/pro-demo-img.jpeg'); ?>
-                            <img src="<?php echo $imageURL; ?>" width="50"/>
+
+                        <td class="text-right">
+
                         </td>
                         <td><?php echo $item["name"]; ?></td>
                         <td><?php echo 'Rs' . " " . $item["price"]; ?></td>
                         <td><input type="number" class="form-control text-center" value="<?php echo $item["qty"]; ?>"
                                    onchange="updateCartItem(this, '<?php echo $item["rowid"]; ?>')"></td>
-                        <td class="text-right"><?php echo 'Rs' . " " . $item["subtotal"]; ?></td>
                         <td class="text-right">
-                            <button class="btn btn-sm btn-danger"
+                            <button class="btn btn-sm"
                                     onclick="return confirm('Are you sure to delete item?')?window.location.href='<?php echo site_url('/Cartclass/deleteItem/' . $item["rowid"]); ?>':false;">
-                                <i class="itrash"></i></button>
+                                <i class="deletepizza"></i></button>
+
                         </td>
+                        <td class="text-right"><?php echo 'Rs' . " " . $item["subtotal"]; ?></td>
+
+                        <td class="text-right">
+                            <?php $imageURL = !empty($item["image"]) ? base_url('assets/images/' . $item["image"]) : base_url('assets/images/pro-demo-img.jpeg'); ?>
+                            <img src="<?php echo $imageURL; ?>" width="50"/>
+                        </td>
+
                         <?php }
                         }else{ ?>
                         <tr>
-                            <td colspan="6"><p>Your cart is empty.....</p></td>
+                            <td colspan="6"><p>Pizza Now cart is empty.....</p></td>
                             <?php } ?>
                             <?php if ($cartmodel->total_items() > 0){ ?>
                             <tr>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td colspan="1"></td>
                                 <td><strong>Cart Total</strong></td>
                                 <td class="text-right"><strong><?php echo 'Rs' . " " . $cartmodel->total(); ?></strong>
                                 </td>
@@ -89,13 +102,13 @@
             <div class="col mb-2">
                 <div class="row">
                     <div class="col-sm-12  col-md-6">
-                        <a href="<?php echo base_url('index.php/PizzaClass'); ?>" class="btn btn-block btn-light">Continue
-                            Shopping</a>
+                        <a href="<?php echo base_url('index.php/PizzaClass'); ?>" class="btn btn-dark">Back
+                            to Home</a>
                     </div>
                     <div class="col-sm-12 col-md-6 text-right">
                         <?php if ($cartmodel->total_items() > 0) { ?>
                             <a href="<?php echo site_url('CheckoutClass/'); ?>"
-                               class="btn btn-lg btn-block btn-primary">Checkout</a>
+                               class="btn btn-outline-info">Checkout</a>
                         <?php } ?>
                     </div>
                 </div>

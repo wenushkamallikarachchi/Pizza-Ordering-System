@@ -4,7 +4,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>Pizza now</title>
+    <title>Pizza Now!!!</title>
     <link href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/style.css'); ?>" rel="stylesheet">
 </head>
@@ -13,7 +13,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
     <img class="rounded float-left"
-         src="<?php echo base_url('uploads/product_images/logo.jpg'); ?>" style="height:50px;width: 50px"
+         src="<?php echo base_url('assets/images/logo.jpg'); ?>" style="height:50px;width: 50px"
          alt="">
     <a class="navbar-brand" style="margin-left: 20px;" href="#">Pizza Now</a>
     <div class=" navbar-collapse" id="navbarResponsive">
@@ -48,13 +48,14 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     { ?>
                         <div class="card col-lg-3">
                             <img class="card-img-top"
-                                 src="<?php echo base_url('uploads/product_images/' . $row['image']); ?>"
+                                 src="<?php echo base_url('assets/images/' . $row['image']); ?>"
                                  alt="">
                             <div class="card-body" style="background-color: #1b1e21">
                                 <h5 class="card-title" style="color: white"><?php echo $row["name"]; ?></h5>
-                                <h6 class="card-subtitle mb-2 text-muted " style="color: white">
-                                    Price: <?php echo 'Rs' . " " . $row["price"]; ?></h6>
                                 <p class="card-text" style="color: white"><?php echo $row["description"]; ?></p>
+                                <h6 class="card-subtitle mb-2  " style="color: white">
+                                    Price: <?php echo 'Rs' . " " . $row["price"]; ?></h6>
+
 
                                 <a href="<?php echo site_url('PizzaClass/addToCart/' . $row['id']); ?>"
                                    class="btn btn-primary">Add
@@ -80,13 +81,14 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 { ?>
                     <div class="card col-lg-3">
                         <img class="card-img-top"
-                             src="<?php echo base_url('uploads/product_images/' . $row['image']); ?>"
+                             src="<?php echo base_url('assets/images/' . $row['image']); ?>"
                              alt="">
-                        <div class="card-body">
-                            <h5 class="card-title"><?php echo $row["name"]; ?></h5>
-                            <h6 class="card-subtitle mb-2 text-muted">
+                        <div class="card-body" style="background-color: #1b1e21">
+                            <h5 class="card-title" style="color: white"><?php echo $row["name"]; ?></h5>
+                            <p class="card-text" style="color: white"><?php echo $row["description"]; ?></p>
+                            <h6 class="card-subtitle mb-2 " style="color: white">
                                 Price: <?php echo 'Rs' . " " . $row["price"]; ?></h6>
-                            <p class="card-text"><?php echo $row["description"]; ?></p>
+
 
                             <a href="<?php echo site_url('PizzaClass/addToCart/' . $row['id']); ?>"
                                class="btn btn-primary">Add
@@ -111,13 +113,14 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     { ?>
                         <div class="card col-lg-3">
                             <img class="card-img-top"
-                                 src="<?php echo base_url('uploads/product_images/' . $row['image']); ?>"
+                                 src="<?php echo base_url('assets/images/' . $row['image']); ?>"
                                  alt="">
-                            <div class="card-body">
-                                <h5 class="card-title"><?php echo $row["name"]; ?></h5>
-                                <h6 class="card-subtitle mb-2 text-muted">
+                            <div class="card-body" style="background-color: #1b1e21">
+                                <h5 class="card-title" style="color: white"><?php echo $row["name"]; ?></h5>
+                                <p class="card-text" style="color: white"><?php echo $row["description"]; ?></p>
+                                <h6 class="card-subtitle mb-2" style="color: white">
                                     Price: <?php echo 'Rs' . " " . $row["price"]; ?></h6>
-                                <p class="card-text"><?php echo $row["description"]; ?></p>
+
 
                                 <a href="<?php echo site_url('PizzaClass/addToCart/' . $row['id']); ?>"
                                    class="btn btn-primary">Add
@@ -137,17 +140,17 @@ defined('BASEPATH') or exit('No direct script access allowed');
     <div class="container py-10">
         <div class="row py-4">
             <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-               <img src="<?php echo base_url('uploads/product_images/logo.jpg'); ?>"
+               <img class="rounded float-left" src="<?php echo base_url('assets/images/logo.jpg'); ?>"
                 alt="" width="180" class="mb-3">
 
             </div>
             <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
                 <h6 class="font-weight-bold mb-4">Shop</h6>
                 <ul class="list-unstyled mb-0">
-                    <li class="mb-2"><a href="#" class="text-muted">For Women</a></li>
-                    <li class="mb-2"><a href="#" class="text-muted">For Men</a></li>
-                    <li class="mb-2"><a href="#" class="text-muted">Stores</a></li>
-                    <li class="mb-2"><a href="#" class="text-muted">Our Blog</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted">Pizza</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted">Appetizer</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted">Special Deals</a></li>
+                    <li class="mb-2"><a href="#" class="text-muted">Cart</a></li>
                 </ul>
             </div>
             <div class="col-lg-4 col-md-6 mb-lg-0">

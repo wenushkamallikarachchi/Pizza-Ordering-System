@@ -34,8 +34,8 @@ class CheckoutClass extends CI_Controller
         if (isset($submit)) {
             // Form field validation rules
             $this->form_validation->set_rules('name', 'Name', 'required');
-            $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
-            $this->form_validation->set_rules('phone', 'Phone', 'required');
+            $this->form_validation->set_rules('email', 'Email', 'required|valid_email|is_unique[users.email]');
+            $this->form_validation->set_rules('phone', 'Phone', 'required|is_unique[users.phone]');
             $this->form_validation->set_rules('address', 'Address', 'required');
 
             // Prepare customer data
@@ -71,7 +71,7 @@ class CheckoutClass extends CI_Controller
 
         // Customer data
         $data['userData'] = $custData;
-
+        $data['cartModel']=$this->CartModel;
         // Retrieve cart data from the session
         $data['cartItems'] = $this->CartModel->contents();
 

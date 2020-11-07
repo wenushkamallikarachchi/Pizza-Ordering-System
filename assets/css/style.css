@@ -4,7 +4,7 @@ h1{
 }
 .container{
 	padding-top: 60px;
-	margin-right: 10px;
+
 }
 .card{
 	margin-right: 10px;
@@ -28,8 +28,8 @@ h1{
 	content: url('../images/cart.png');
 	vertical-align: top;
 }
-.itrash{
-	content: url('../images/remove.png');
+.deletepizza{
+	content: url('../images/delete.png');
 	vertical-align: top;
 }
 

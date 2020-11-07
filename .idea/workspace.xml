@@ -21,7 +21,28 @@
   <component name="ChangeListManager">
     <list default="true" id="cc51e36f-9e76-43c8-9161-ddb828863994" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/CartModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/CartModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/CheckoutClass.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/CheckoutClass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/checkout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/orderPass.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/orderPass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/pizza.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/pizza.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/remove.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/product_images/app_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/product_images/app_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/product_images/app_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/product_images/app_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/product_images/cheese_lovers.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/product_images/chicken_Bacon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/product_images/chicken_sausage_meat_large.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/product_images/chicken_sausage_meat_small.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/product_images/deal_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/product_images/deal_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/product_images/devilled_Chicken.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/product_images/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/product_images/sasage_Delight.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/product_images/tandoori_chicken.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/product_images/wing.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +90,7 @@
       <workItem from="1604353723396" duration="13000" />
       <workItem from="1604383277238" duration="2784000" />
       <workItem from="1604650928565" duration="3264000" />
-      <workItem from="1604759963076" duration="1543000" />
+      <workItem from="1604759963076" duration="9569000" />
     </task>
     <servers />
   </component>
